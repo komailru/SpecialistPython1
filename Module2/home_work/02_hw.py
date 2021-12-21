@@ -8,3 +8,14 @@
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
 # TODO: your code here
+
+n = int(input("На лугу пасется... "))
+
+last_number = n % 10
+
+if last_number == 0 or 5 <= last_number <= 9 or 11 <= n <= 14:
+	print(str(n) + " коров")
+elif 2 <= last_number <= 4:
+	print(str(n) + " коровы")
+else:
+	print(str(n) + " корова")
