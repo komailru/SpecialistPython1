@@ -31,3 +31,11 @@
 # 20 199.8 Rub.
 
 # TODO: your code here
+
+price = float(input("Введите цену товара: "))
+i = 1
+while i <= 20:
+	cost = str(price * i)
+	position = cost.find(".")
+	print(str(i), " ", cost[:position+3])
+	i += 1
