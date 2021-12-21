@@ -18,3 +18,18 @@
 
 
 # TODO: your code here
+
+a = int(input("Введите сторону квадрата "))
+
+i = 1
+while i <= a:
+    j = 1
+    string = ""
+    while j <= a:
+        if j == i or j == a-i+1:
+            string = string + "#"
+        else:
+            string = string + " "
+        j += 1
+    print(string)
+    i += 1
