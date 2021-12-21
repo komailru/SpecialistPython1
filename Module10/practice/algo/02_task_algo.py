@@ -7,3 +7,22 @@
 
 # Дополнительно: сделайте так, чтобы можно было гарантированно угадать число за 7 попыток.
 
+Max_number = 100
+
+N = 50
+N_max = 100
+N_min = 0
+i = 1
+
+while i <= 7 and N_max != N_min:
+    answer = int(input(str(i)+" шаг: твое число равно (1), меньше (3) или больше (2), чем число "+str(N)+"? "))
+    if answer == 1:
+        break
+    elif answer == 3:
+        N_max = N - 1
+        N = N_min + (N_max - N_min) // 2
+    else:
+        N_min = N + 1
+        N = N_min + (N_max - N_min) // 2
+    i += 1
+print(N)
