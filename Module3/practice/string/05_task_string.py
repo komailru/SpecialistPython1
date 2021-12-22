@@ -6,3 +6,22 @@
 
 # TODO: your code here
 
+text = input("Введите строку: ")
+
+text = text.lower()
+
+i = 0
+s1 = ""
+s2 = ""
+while i < len(text):
+    if text[i].isalpha():
+        s1 = s1 + text[i]
+    if text[-i-1].isalpha():
+        s2 = s2 + text[-i-1]
+    i += 1
+print(s1)
+print(s2)
+if s1 == s2:
+    print("YES")
+else:
+    print("NO")
