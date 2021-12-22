@@ -5,3 +5,13 @@ text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor
 # Примечание: для генериации текста можете воспользоваться сайтом: https://ru.lipsum.com/
 
 # TODO: your code here
+
+count = 0
+space_index = text.find(" ")
+while space_index >= 0:
+    text = text[space_index + 1:]
+    space_index = text.find(" ")
+    word = text[:space_index]
+    if len(word) > 5:
+        count += 1
+print(count)
