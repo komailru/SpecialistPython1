@@ -8,3 +8,20 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat
 # Примечание: обратите внимание на перенос длинной строки на новую строку
 
 # TODO: your code here
+
+text = input("Введите строку: ")
+
+i = 0
+s = ""
+while i < len(text):
+    if text[i].isalnum() or text[i] == " ":
+        s = s + text[i]
+    i += 1
+array = s.split(" ")
+i = 0
+count = 0
+while i < len(array):
+    if len(array[i]) > 7:
+        count += 1
+    i += 1
+print(count)
