@@ -2,3 +2,10 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+
+n = [10, -10, 22]
+
+summ_items = 0
+for item in n:
+    summ_items += item    
+print(summ_items) 
