@@ -5,3 +5,14 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+
+result = []
+
+for item in numbers:
+	if item > 0:
+		sq = item ** .5
+		if sq % 1 == 0:
+			result.append(int(sq))
+print(result)	
