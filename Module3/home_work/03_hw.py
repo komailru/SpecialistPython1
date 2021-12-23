@@ -2,3 +2,11 @@
 # Вывести на экран сумму всех положительных элементов кратных двум.
 
 # TODO: your code here
+
+numbers = [-10, 5, 0, 44, -3, 4]
+print(numbers)
+summ = 0
+for item in numbers:
+	if item > 0 and item % 2 == 0:
+		summ += item
+print("Сумма положительных кратных 2 =",summ)
