@@ -4,7 +4,18 @@
 
 def lucky_ticket(ticket_number):
     # TODO: your code here
-    pass
+
+    def summ(number):
+        result = 0
+        while number > 0:
+            result = result + number % 10
+            number = number // 10
+        return result
+
+
+    left3 = ticket_number // 1000
+    right3= ticket_number % 1000
+    return summ(left3) == summ(right3)
 
 
 # Тестируем функцию
