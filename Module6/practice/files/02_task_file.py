@@ -13,3 +13,23 @@
 prices = []
 
 # Подсказка: для преобразования строки в список вспомните про метод строки .split()
+
+path = "data_files/sold.txt"
+f = open(path, "r")
+
+sum_total = 0
+max_price = 0
+min_price = 0
+
+for line in f:
+    for price in line.split():
+        number = float(price)
+        sum_total += number
+        if number > max_price:
+            max_price = number
+        elif number < min_price:
+            min_price = number
+f.close()
+print(sum_total)
+print(max_price)
+print(min_price)
